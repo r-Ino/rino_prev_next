@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Default template implementation to display next and previous button.
+ */
+#}
+<div class="rino-next">
+    <p>{% if next %}
+            <a class="btn btn-primary" href="{{ next }}"><span class="glyphicon glyphicon-chevron-left"></span> {{ next_title }}</a>
+        {% endif %}
+        {% if prev %}
+            <a class="btn btn-primary pull-right" href="{{ prev }}">{{  prev_title }} <span class="glyphicon glyphicon-chevron-right"></span> </a> </p>
+         {% endif %}
+</div>
+
+
+
+
+

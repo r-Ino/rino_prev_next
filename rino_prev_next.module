@@ -1,0 +1,23 @@
+<?php
+/**
+ * @file
+ * Code for the rIno prev next module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function rino_prev_next_theme($existing, $type, $theme, $path) {
+    $items = [];
+
+    $items['rino_next'] = [
+        'variables' => [
+            'next' => NULL,
+            'next_title' => NULL,
+            'prev' => NULL,
+            'prev_title' => NULL,
+        ],
+    ];
+
+    return $items;
+}

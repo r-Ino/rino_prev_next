@@ -1,0 +1,5 @@
+name: rIno prev next
+description: Add a block for next and previous article.
+core: 8.x
+package: rIno
+type: module
