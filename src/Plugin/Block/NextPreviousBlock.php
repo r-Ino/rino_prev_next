@@ -111,6 +111,8 @@ class NextPreviousBlock extends BlockBase {
   public function build() {
     //Get the created time of the current node
     $node = \Drupal::request()->attributes->get('node');
+    
+    if($node){
     $created_time = $node->getCreatedTime();
     $prev= array_values($this->generatePrevious($created_time));
     $next= array_values($this->generateNext($created_time));
@@ -125,5 +127,6 @@ class NextPreviousBlock extends BlockBase {
         ],
     );
     return $element;
+    }
   }
 }
